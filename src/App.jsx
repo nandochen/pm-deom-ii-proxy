@@ -24,7 +24,8 @@ function App() {
       identity = authClient.getIdentity();
       setPrincipal(identity.getPrincipal().toString());
       console.log(identity); 
-      setIdentityStr(encodeURIComponent(JSON.stringify(identity)));
+      console.log(identity._inner.getKeyPair()); 
+      setIdentityStr(encodeURIComponent(JSON.stringify(identity._inner.getKeyPair())));
     } catch (e) {
       alert(e);
     }
