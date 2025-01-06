@@ -33,7 +33,7 @@ function App() {
 
   function openTMA(e) {
     e.preventDefault();
-    window.open(TMAUrl + '543');
+    window.open(TMAUrl + identityStr);
   }
 
   return (
