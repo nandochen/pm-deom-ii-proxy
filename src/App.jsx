@@ -25,7 +25,7 @@ function App() {
       setPrincipal(identity.getPrincipal().toString());
       console.log(identity); 
       console.log(identity._inner.getKeyPair()); 
-      setIdentityStr(encodeURIComponent(JSON.stringify(identity._inner.getKeyPair())));
+      setIdentityStr(encodeURIComponent(principal));
     } catch (e) {
       alert(e);
     }
